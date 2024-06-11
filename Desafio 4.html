@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío 4: Etiquetas Semánticas</title>
+    <!-- <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+          *{
+              margin: 0;
+             padding: 0;
+           }
+          body{
+            height: 100%;
+            position: relative;
+            background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(fondopro.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Times New Roman', Times, serif;
+          }
+          header {
+            color: aqua;  
+          }
+          nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 20px;
+            padding-left: 5%;
+          padding-right: 5%;
+          font-weight: bold;
+        }
+          .logo{
+            width: 150px;
+            border-radius: 10px;
+            }
+        footer {
+      
+          color: aqua;
+          margin-top: 2%;
+          text-align: center;
+        }
+        main {
+            flex-grow: 1;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: aqua;
+            margin-right: 35%;
+            font-size: 250%;
+        }
+        h2{
+          color: white;
+        }
+        h2:hover{
+          color: aqua;
+        }
+        h3:hover{
+          color: aqua;
+        }
+        p {
+            line-height: 1.6;
+            color: white;
+        }
+        p:hover{
+          color: aqua;
+        }
+       
+        .btn1{
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            margin-left: 7%;
+            background-color: white;
+            border-radius: 50px;
+        }
+        .btn2{
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            margin-left: 70%;
+            background-color: white;
+            border-radius: 50px;
+        }
+    
+        .start-button:hover {
+            background-color: aqua;
+        }
+        
+        .color{
+          color: white;
+         
+        }
+        .color:hover{
+          color: aqua;
+        }
+        .card-container{
+            max-width: 800px;
+            padding: 2%;
+            border: 2px solid #fafafa10;
+            margin: 20px auto;
+            border-radius: 1rem;
+            -webkit-backdrop-filter: blur(1.4rem);
+            backdrop-filter: blur(1.4rem);
+            box-shadow: inset 0 0 10px aqua, inset 0 0 20px aqua, 0 0 10px aqua, 0 0 30px aqua;
+            margin-top: 2%;
+            text-align: justify;
+        }
+       
+        code{
+          color: white;
+        }
+        code:hover{
+          color: aqua;
+        }
+        .contenido{
+          background-color: transparent;
+          color: white;
+        }
+        li:hover{
+          color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <header>
+      <nav> 
+        <a href="INDEX.html"><img class="logo" src="log.png" alt=""></a> 
+        <h1>Bienvenido al Desafío 4</h1>
+    </nav>
+    </header>
+    
+    <main>
+      <div class="card-container">
+        <h2>Etiquetas Semánticas</h2>
+        <p class="color">En este desafío, aprenderás sobre la importancia de las etiquetas semánticas en HTML y cómo utilizarlas para mejorar la estructura y la accesibilidad de tus páginas web.</p>
+                  
+        <div class="accordion " id="accordionPanelsStayOpenExample">
+          <div class="accordion-item contenido">
+            <h2 class="accordion-header">
+              <button class="accordion-button contenido " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  ¿Qué son las etiquetas semánticas?
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+              <div class="accordion-body ">
+               <p>Las etiquetas semánticas son elementos HTML que proporcionan información sobre el contenido que encierran. Al utilizar estas etiquetas, estás comunicando de manera clara la estructura y el significado de tu contenido tanto para los usuarios como para los motores de búsqueda.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item contenido">
+            <h2 class="accordion-header ">
+              <button class="accordion-button collapsed contenido " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  ¿Por qué son importantes?
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse  ">
+              <div class="accordion-body contenido ">
+                <p>Las etiquetas semánticas ayudan a mejorar la accesibilidad de tu sitio web, permitiendo que los usuarios con discapacidades visuales o lectores de pantalla puedan entender mejor la estructura de la página. Además, los motores de búsqueda utilizan esta información para indexar y clasificar tu contenido de manera más precisa.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item contenido">
+            <h2 class="accordion-header ">
+              <button class="accordion-button collapsed contenido " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                  Etiquetas Semánticas Comunes
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                  <p>Algunas de las etiquetas semánticas más comunes son:</p>
+                  <ul>
+                    <li><code>&lt;header&gt;</code>: Define el encabezado de una página o sección.</li>
+                    <li><code>&lt;nav&gt;</code>: Define una sección de navegación.</li>
+                    <li><code>&lt;main&gt;</code>: Define el contenido principal del documento.</li>
+                    <li><code>&lt;article&gt;</code>: Define contenido independiente y relevante, como artículos o publicaciones.</li>
+                    <li><code>&lt;section&gt;</code>: Define una sección genérica de contenido.</li>
+                    <li><code>&lt;aside&gt;</code>: Define contenido relacionado pero separado del contenido principal, como barras laterales.</li>
+                    <li><code>&lt;footer&gt;</code>: Define el pie de página de una página o sección.</li>
+                  </ul>
+                  
+
+              </div>
+          </div>
+        </div>   
+        
+       <div class="accordion-item contenido">
+          <h2 class="accordion-header contenido">
+            <button class="accordion-button collapsed contenido" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour " aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+              Ejercicio Práctico
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse ">
+            <div class="accordion-body ">
+              <p>Ahora es tu turno. Utiliza las etiquetas semánticas para estructurar la siguiente página web.</p>
+           
+              <h3>Instrucciones</h3>
+              <p>1. Crea una estructura básica de HTML con las etiquetas <code>&lt;!DOCTYPE html&gt;</code>, <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, y <code>&lt;body&gt;</code>.</p>
+              <p>2. Añade un <code>&lt;header&gt;</code> para el encabezado de la página.</p>
+              <p>3. Crea una barra de navegación utilizando la etiqueta <code>&lt;nav&gt;</code>.</p>
+              <p>4. Define el contenido principal con la etiqueta <code>&lt;main&gt;</code>.</p>
+              <p>5. Dentro del <code>&lt;main&gt;</code>, añade un <code>&lt;section&gt;</code> y un <code>&lt;article&gt;</code> para estructurar el contenido.</p>
+              <p>6. Añade un <code>&lt;aside&gt;</code> para contenido adicional, como enlaces o publicidad.</p>
+              <p>7. Finalmente, añade un <code>&lt;footer&gt;</code> para el pie de página.</p>
+            </div>
+          </div>
+        </div>
+    </div> 
+       </div>
+        
+
+
+
+
+        <div>
+          <a href="Desafio 3.html"><img class="btn1 start-button" src="flecha.png"></a>
+          <a href="Desafio 5.html"><img class="btn2 start-button" src="flecha2.png"></a>
+        </div>
+    </main>
+    <footer>
+      © 2024 Aventuras HTML: El Aprendiz de Desarrollador Web
+    </footer>
+
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

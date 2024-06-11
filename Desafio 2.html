@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafío 2: Diseño de Pagina Web con estilos CSS</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+  }
+    body{
+      height: 100%;
+      position: relative;
+      background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(fondopro.png);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: 'Times New Roman', Times, serif;
+  }
+    header {
+      color: aqua;  
+  }
+    nav{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 20px;
+      padding-left: 5%;
+      padding-right: 5%;
+      font-weight: bold;
+  }
+    .logo{
+      width: 150px;
+      border-radius: 10px;
+          
+  }
+    footer {
+      
+      color: aqua;
+      margin-top: 2%;
+      text-align: center;
+  }
+
+
+    .card-container{
+      max-width: 800px;
+      padding: 2%;
+      border: 2px solid #fafafa10;
+      margin: 20px auto;
+      border-radius: 1rem;
+      -webkit-backdrop-filter: blur(1.4rem);
+      backdrop-filter: blur(1.4rem);
+      box-shadow: inset 0 0 10px aqua, inset 0 0 20px aqua, 0 0 10px aqua, 0 0 30px aqua;
+      margin-top: 2%;
+  }
+    .container-2{
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 40px;
+      background-color: transparent;
+      -webkit-backdrop-filter: blur(1.4rem);
+      backdrop-filter: blur(1.4rem);
+      border-radius: 10px;
+      box-shadow: inset 0 0 10px aqua, inset 0 0 20px aqua, 0 0 10px aqua;
+      border: 2px solid #fafafa10;
+   }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      padding: 10px;
+      border: 1px solid white;
+      text-align: left;
+      box-shadow: 0 0 10px aqua;
+      background-color: transparent;
+      color: white;
+    }
+
+    th {
+      background-color: aquamarine;
+      color: black;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      
+    }
+    ol li{
+      margin-left: 30px;
+    }
+    pre {
+      background-color: #f0f0f0;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px aqua;
+    }
+    .btn1{
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            margin-left: 7%;
+            background-color: white;
+            border-radius: 50px;
+        }
+        .btn2{
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            margin-left: 70%;
+            background-color: white;
+            border-radius: 50px;
+        }
+    
+        .start-button:hover {
+            background-color: aqua;
+        } 
+        h1 {
+            color: aqua;
+            margin-right: 35%;
+            font-size: 250%;
+        }
+        h2 {
+            color: white;
+            text-shadow: 0 0 10px purple;
+        }
+        h2:hover{
+            color: aqua;
+        } 
+        p{
+          color: white;
+        }  
+    p:hover{
+      color: aqua;
+    }
+    li{
+      color: white;
+    }
+    li:hover{
+      color: aqua;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav><a href="INDEX.html"><img class="logo" src="log.png" alt=""></a> 
+      <h1>Bienvenido al Desafío 2</h1>
+    </nav>
+  </header>
+  <main>
+    <div class="card-container">
+      <h2> Diseño de Pagina Web con estilos CSS</h2><br>
+      <h2>Instrucciones para vincular un archivo CSS a HTML</h2><br>
+      <p>Para vincular un archivo CSS externo a un documento HTML, debes seguir los siguientes pasos:</p> <br>
+        <ol>
+           <li>Crea un archivo CSS (por ejemplo, <code>estilos.css</code>) con las reglas de estilo que desees aplicar.</li><br>
+           <li>En tu documento HTML, añade la etiqueta <code>&lt;link&gt;</code> dentro del <code>&lt;head&gt;</code>, especificando el atributo <code>href</code> con la ruta al archivo CSS y el atributo <code>rel="stylesheet"</code>.</li>
+        </ol><br>
+      <p>Ejemplo:</p><br>
+      <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Mi Página Web&lt;/title&gt;
+  <strong>&lt;link rel="stylesheet" href="estilos.css"&gt;</strong>
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;!-- Contenido de la página --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+      </pre><br>
+      <p>A continuación, te mostramos una tabla con algunas de las propiedades CSS más comunes:</p><br>
+      <table>
+        <thead>
+          <tr>
+            <th>Propiedad</th>
+            <th>Descripción</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>color</code></td>
+            <td>Define el color del texto.</td>
+          </tr>
+          <tr>
+            <td><code>background-color</code></td>
+            <td>Establece el color de fondo de un elemento.</td>
+          </tr>
+          <tr>
+            <td><code>font-size</code></td>
+            <td>Especifica el tamaño de la fuente del texto.</td>
+          </tr>
+          <tr>
+            <td><code>margin</code></td>
+            <td>Define el margen alrededor de un elemento.</td>
+          </tr>
+          <tr>
+            <td><code>padding</code></td>
+            <td>Define el espacio interior entre el contenido de un elemento y su borde.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Recuerda que también puedes utilizar clases y selectores para aplicar estilos a elementos específicos o grupos de elementos en tu documento HTML. Aquí tienes un ejemplo de cómo usar clases y selectores en CSS:</p><br>
+      <pre>
+/* Archivo CSS: estilos.css */
+h1 {
+  color: #007bff;
+}
+
+.parrafo-destacado {
+  font-size: 18px;
+  color: #333;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-left: 5px solid #007bff;
+}
+
+/* Archivo HTML */
+&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Ejemplo de Clases y Selectores&lt;/title&gt;
+  &lt;link rel="stylesheet" href="estilos.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Este es un encabezado&lt;/h1&gt;
+  &lt;p class="parrafo-destacado"&gt;Este es un párrafo destacado con estilos CSS aplicados.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+      </pre>
+    </div>
+    <div class="card-container">
+      <h3>Guía de Estilos CSS para Mejorar tu Página Web</h3>
+      <p>A continuación se presentan algunas propiedades CSS adicionales que pueden mejorar la apariencia de tu página web:</p>
+      <ul class="container-2">
+        <li><code>text-align</code>: Ajusta la alineación del texto. Valores comunes: <code>left</code>, <code>right</code>, <code>center</code>, <code>justify</code>.</li><br>
+        <li><code>border</code>: Añade un borde alrededor de un elemento. Ejemplo: <code>border: 1px solid #000;</code>.</li><br>
+        <li><code>border-radius</code>: Redondea las esquinas de un elemento. Ejemplo: <code>border-radius: 5px;</code>.</li><br>
+        <li><code>box-shadow</code>: Añade una sombra a un elemento. Ejemplo: <code>box-shadow: 0 4px 8px rgba(0,0,0,0.1);</code>.</li><br>
+        <li><code>font-family</code>: Cambia la fuente del texto. Ejemplo: <code>font-family: 'Arial', sans-serif;</code>.</li><br>
+        <li><code>width</code> y <code>height</code>: Especifica el ancho y alto de un elemento. Ejemplo: <code>width: 100px;</code>, <code>height: 50px;</code>.</li><br>
+        <li><code>display</code>: Controla cómo se muestra un elemento. Valores comunes: <code>block</code>, <code>inline</code>, <code>inline-block</code>, <code>flex</code>.</li><br>
+        <li><code>flex</code>: Propiedad para hacer diseños flexibles. Ejemplo: <code>display: flex;</code>, <code>justify-content: center;</code>, <code>align-items: center;</code>.</li><br>
+        <li><code>position</code>: Controla la posición de un elemento. Valores comunes: <code>static</code>, <code>relative</code>, <code>absolute</code>, <code>fixed</code>, <code>sticky</code>.</li>
+      </ul>
+      <p>Experimenta con estas propiedades y ajusta los valores para ver cómo cambian la apariencia de tu página web.</p><br>
+      <div>
+        <a href="Desafio 1.html"><img class="btn1 start-button" src="flecha.png"></a>
+        <a href="Desafio 3.html"><img class="btn2 start-button" src="flecha2.png"></a>
+      </div>
+    </div>
+  </main>
+  <footer>
+  &copy; 2024 Aventuras HTML: El Aprendiz de Desarrollador Web 
+  </footer><br>
+</body>
+</html>

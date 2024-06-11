@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío 3: Imágenes y Enlaces</title>
+    <style>
+    *{
+      margin: 0;
+      padding: 0;
+  }
+    body{
+      height: 100%;
+      position: relative;
+      background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(fondopro.png);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: 'Times New Roman', Times, serif;
+  }
+    header {
+      color: aqua;  
+  }
+    nav{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 20px;
+      padding-left: 5%;
+      padding-right: 5%;
+      font-weight: bold;
+  }
+    .logo{
+      width: 150px;
+      border-radius: 10px;
+          
+  }
+    footer {
+      
+      color: aqua;
+      margin-top: 2%;
+      text-align: center;
+  }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: aqua;
+            margin-right: 35%;
+            font-size: 250%;
+        }
+        h2 {
+            color: white;
+           
+        }
+        h2:hover{
+            color: aqua;
+        } 
+        h3{
+            color: white;
+        }
+        h3:hover{
+            color: aqua;
+        }
+        p {
+            line-height: 1.6;
+            color: white;
+        }
+        p:hover{
+            color: aqua;
+        }
+       li{
+            color: white;
+            
+        }
+        li:hover{
+            color: aqua;
+        }
+       .a{
+        color: aqua;
+        text-decoration: none;
+        margin-left: 3%;
+       }
+       .a:hover{
+    
+        text-decoration: underline white;
+       }
+        .btn2{
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            margin-left: 45%;
+            background-color: white;
+            border-radius: 50px;
+        }
+        .btn1{
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            margin-left: 20%;
+            background-color: white;
+            border-radius: 50px;
+        }
+        .start-button:hover {
+            background-color: aqua;
+        }
+        .card-container{
+            max-width: 800px;
+            padding: 2%;
+            border: 2px solid #fafafa10;
+            margin: 20px auto;
+            border-radius: 1rem;
+            -webkit-backdrop-filter: blur(1.4rem);
+            backdrop-filter: blur(1.4rem);
+            box-shadow: inset 0 0 10px aqua, inset 0 0 20px aqua, 0 0 10px aqua, 0 0 30px aqua;
+            margin-top: 2%;
+            text-align: justify;
+        }
+      .neon{
+        box-shadow: 0 0 10px aqua, 0 0 30px aqua;
+        width: 50%;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+        border-radius: 5px;
+      }
+      pre{
+        color: white;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <nav> 
+            <a href="INDEX.html"><img class="logo" src="log.png" alt=""></a> 
+            <h1>Bienvenido al Desafío 3</h1>
+        </nav>
+    </header>
+    <div class="card-container">
+        <main>
+            <h2>Imágenes y Enlaces</h2><br>
+            <p>En este desafío, aprenderás a agregar imágenes y enlaces a tus páginas HTML.</p><br>
+            <p>
+                    <li>Descarga una imagen que te guste o si ya la tienes mueve esa imagen 
+                        a la carpeta que creaste para tu página web.</li>
+                     <li>Dirígete al editor de texto, para insertar la imagen en tu página web, utiliza la etiqueta <code>&lt;img&gt;</code>. </li>
+            </p><br>
+            <p>
+                Esta etiqueta tiene dos atributos principales:</p><br>
+            <ul>
+              <li><code>src</code>: Especifica la ruta de la imagen que deseas mostrar.</li>
+              <li><code>alt</code>: Proporciona un texto alternativo para la imagen, útil para la accesibilidad y en caso de que la imagen no se cargue.</li>
+            </ul><br>
+              <pre>
+                <code>  &lt;img src=<strong>"ruta/de/tu/imagen.jpg"</strong>alt="Descripción de la imagen"&gt;</code>
+            </pre>
+            
+            <img class="neon" src="imagen 1.png" alt="Ejemplo de imagen">
+            
+            <h2>Creación de Enlaces</h2>
+            <p>Para crear un enlace, utilizamos la etiqueta <code>&lt;a&gt;</code>. Esta etiqueta tiene un atributo principal:</p><br>
+            <ul>
+              <li><code>href</code>: Especifica la URL del destino al que lleva el enlace.</li>
+            </ul><br>
+            <pre>
+                <code>  &lt;a href="https://www.ejemplo.com"&gt;Visita Ejemplo&lt;/a&gt;</code>
+            </pre>
+            <p><strong>Aquí un ejemplo de enlace:</strong></p><br>
+            <a class="a" href="https://juanxxiii.edu.ec/" target="_blank" >https://juanxxiii.edu.ec/</a><br><br>
+            <h2>Ejercicio Práctico</h2><br>
+            <p>Ahora es tu turno. Inserta una imagen en tu página web y crea un enlace que lleve a un sitio web de tu elección.</p><br>
+            
+            <h3>Instrucciones</h3><br>
+            <p>1. Encuentra una imagen que te guste.</p>
+            <p>2. Inserta la imagen en el lugar adecuado utilizando la etiqueta <code>&lt;img&gt;</code> con los atributos <code>src</code> y <code>alt</code>.</p>
+            <p>3. En css puedes ajustar el tamaño de tu imagen con los estilos <strong><code>width</code></strong>  y   <strong><code>height</code></strong>  , estos estilos se miden en pixeles (px) o en porcentaje (%).
+            Ejemplo: <code>width: 20px; </code>/<code>width: 20%; </code>---  <code>height: 20%;</code> / <code>height: 20px%</code></p>
+            <p>3. Crea un enlace a un sitio web de tu elección utilizando la etiqueta <code>&lt;a&gt;</code> con el atributo <code>href</code>.</p>
+        </main>
+        <div>
+            <a href="Desafio 2.html"><img class="btn1 start-button" src="flecha.png"></a>
+            <a href="Desafio 4.html"><img class="btn2 start-button" src="flecha2.png"></a>
+    
+        </div>
+    </div>
+    
+
+    <footer>
+        © 2024 Aventuras HTML: El Aprendiz de Desarrollador Web
+    </footer><br>
+</body>
+</html>

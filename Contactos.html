@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+        .logo{
+            height: 75px;
+            border-radius: 10px;
+            
+        }
+        body{
+            height: 145vh;
+            position: relative;
+            background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(fondopro.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        /*HEADER*/
+        header{
+            height: 100px;
+            padding: 0 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .menu a{
+            color: white;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 0 10px;
+            transition: 0.5s;
+        }
+        .mostrar-menu, .esconder-menu{
+            font-size: 35px;
+            cursor: pointer;
+            color: white;
+            display: none;
+            transition: 0.4s;
+        }
+        .mostrar-menu{
+            order: 1;
+        }
+        .menu a:hover{
+            color: aqua;
+        }
+        .mostrar-menu:hover,
+        .esconder-menu:hover{
+            color: aqua;
+        }
+        #check{
+            display: none;
+        }
+        /*RESPONSIVE*/
+        @media(max-width: 768px){
+            /*HEADER*/
+            .mostrar-menu, .esconder-menu{
+                display: block;
+            }
+            .menu{
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background: linear-gradient(
+                    90deg,
+                    aqua,
+                    black 70%
+                );
+                right: -100%;
+                top: 0;
+                text-align: center;
+                padding: 100px 0;
+                z-index: 100;
+                transition: 0.8s;
+            }
+            .menu a{
+                display: block;
+                padding: 20px;
+            }
+            .esconder-menu{
+                position: absolute;
+                top: 40px;
+                right: 40px;
+            }
+            #check:checked ~ .menu{
+                right: 0;
+
+            }
+        }
+        .card-container{
+            max-width: 800px;
+            padding: 2%;
+            border: 2px solid #fafafa10;
+            margin: 0 auto;
+            border-radius: 1rem;
+            -webkit-backdrop-filter: blur(1.4rem);
+            backdrop-filter: blur(1.4rem);
+            box-shadow: inset 0 0 10px aqua, inset 0 0 20px aqua, 0 0 10px aqua, 0 0 30px aqua;
+            margin-top: 2%;
+        }
+        h2{
+            color: white;
+            margin-left: 15%;
+        }
+        h2:hover{
+            color: aqua;
+        }
+        .img{
+            margin-left: 2%;
+            width: 3%;
+            background-color: white;
+            border-radius:80px;
+        }
+        p{
+            color: white;
+            text-decoration: none;
+            margin-left: 20%;
+        }
+        p:hover{
+            color: aqua;
+            text-decoration: underline;
+        }
+        .challenge {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid white;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="Menu.html"><img src="log.png" class="logo" alt=""></a>
+       <input type="checkbox" id="check">
+       <label for="check" class="mostrar-menu">
+        &#8801
+       </label> 
+       <nav class="menu">
+       
+            <a href="INDEX.html">Inicio</a>
+            <a href="Contactos.html">Contactos</a>
+            <a href="Objetivo.html">Objetivo</a>
+            <label for="check" class="esconder-menu">
+                &#215
+            </label>
+       </nav>
+    </header>
+            
+    <div class="card-container ">
+        
+        <h2>Alex Morocho</h2><br>
+        <p><img class="img" src="email.png" alt="">  alexmorocho2206@gmail.com</p>
+        <p><img class="img" src="tel.png" alt="">  0939319122</p>
+  
+    
+
+<div class="challenge">
+    <h2>Jhandry Malla</h2><br>
+    <p><img class="img" src="email.png" alt="">  jhandrymalla57@gmail.com</p>
+    <p><img class="img" src="tel.png" alt="">  0993255190</p>
+</div>
+
+<div class="challenge">
+    <h2>Luis Gonzalez</h2><br>
+    <p><img class="img" src="email.png" alt="">  gonzaluis013@gmail.com</p>
+    <p><img class="img" src="tel.png" alt="">  0959943355</p>
+</div>
+
+</div>
+
+
+</body>
+</html>

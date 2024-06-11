@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío 1: Estructura Básica</title>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <style>
+           *{
+            margin: 0;
+            padding: 0;
+        }
+          body{
+            height: 100%;
+            position: relative;
+            background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(fondopro.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        header {
+            color: aqua;  
+        }
+        .logo{
+            width: 150px;
+            border-radius: 10px;
+          
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: aqua;
+            margin-right: 35%;
+        }
+        h2 {
+            color: white;
+        }
+        h2:hover{
+            color: aqua;
+        }
+        p {
+            line-height: 1.6;
+        }
+        code {
+            background-color: #f1f1f1;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        footer {
+      
+            color: aqua;
+            margin-top: 2%;
+            text-align: center;
+        }
+        .btn1{
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            margin-left: 7%;
+            background-color: white;
+            border-radius: 50px;
+        }
+        .btn2{
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            margin-left: 70%;
+            background-color: white;
+            border-radius: 50px;
+        }
+        .start-button:hover {
+            background-color: aqua;
+        }
+    
+        .card-container{
+            max-width: 800px;
+            padding: 2%;
+            border: 2px solid #fafafa10;
+            margin: 0 auto;
+            border-radius: 1rem;
+            -webkit-backdrop-filter: blur(1.4rem);
+            backdrop-filter: blur(1.4rem);
+            box-shadow: inset 0 0 10px aqua, inset 0 0 20px aqua, 0 0 10px aqua, 0 0 30px aqua;
+            margin-top: 2%;
+        }
+        .container-2{
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 40px;
+            background-color: #fff;
+            -webkit-backdrop-filter: blur(1.4rem);
+            backdrop-filter: blur(1.4rem);
+            border-radius: 10px;
+            box-shadow: inset 0 0 10px aqua, inset 0 0 20px aqua, 0 0 10px aqua, 0 0 30px aqua;
+            border: 2px solid #fafafa10;
+        }
+        p{
+            color: white;
+            text-shadow: 0 0 10px purple;
+        }
+        p:hover{
+            color: aqua;
+        }
+        li{
+            color: white;
+           
+        }
+        li:hover{
+            color: aqua;
+           
+        }
+        .center{
+            text-align: justify;
+        }
+        .neon{
+            box-shadow: inset 0 0 10px aqua, 0 0 20px aqua;  
+            margin-left: 10%;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 20px;
+            padding-left: 5%;
+            padding-right: 5%;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav><a href="INDEX.html"><img class="logo" src="log.png" alt=""></a> 
+            <h1>Bienvenido al Desafío 1</h1>
+        </nav>    
+    </header>
+<div class="card-container"> 
+        <main>
+    <h2>Crear la estructura básica de un documento HTML</h2>
+    <p>En este desafío, tu tarea es crear la estructura básica de un documento HTML.</p>
+            <p> <li>Primero, crea una carpeta para tu página web, dentro de esta carpeta vas a crear un documento de texto y a este documento
+                lo vas a nombrar de la siguiente manera ('index.html').</li>
+            </p>
+            <p>
+                Para abrir esta carpeta en Visual Studio Code, haz lo siguiente: 
+            </p>
+          <p class="center">
+            <li>Entra al editor de texto, en este caso es Visual Studio Code, dirígete a la parte superior izquierda y podras visualizar
+            la opción ('File') dentro de este apartado aparecerán varias opciones, selecciona la opción ('Open Folfer'), se abrira el explorador
+            de archivos, busca la carpeta que creaste anteriormente y das a la opción seleccionar, tal y como se muestra a continuación.</li> <br> <br>
+            <img class="neon" width="80%" height="80%" src="Captura.png" alt="">
+          </p> <br>
+        <p>
+           Una vez hayas abierto tu carpeta en el editor de texto vas a procerder a crear la esturctura básica para tu página web.
+        </p>
+        <p>
+            <li>Para hacer esto selecciona el archivo 'index.html' y una vez dentro escribe el siguiente código: <strong>html</strong>, apareceran
+            tres opciones, selecciona la opción <strong>html:5</strong>, este codigo creará toda la esturctura básica del documento HTML.</li>
+        </p>
+        <p>
+            <li>Puedes añadir más contenido dentro del cuerpo &lt;body&gt; de tu página, como puede ser un <strong>&lt;h1&gt; </strong>que sirve para identificar
+            el tema de tu página web. Tambien puedes agregar la etiqueta &lt;p&gt;, se utiliza para representar un párrafo de texto y separar bloques de texto.</li>
+        </p>
+        <p>
+            <li>Para guardar el avance que tienes utiliza la combinación de teclas <strong>ctrl+s</strong></li>
+        </p>
+    <p>A continuación, se muestra un ejemplo básico de la estructura de un documento HTML:</p>
+    <pre>
+       <div class="container-2">
+    <code>
+    &lt;!DOCTYPE html&gt; <br>
+    &lt;html lang="es"&gt; <br>
+    &lt;head&gt; <br>
+        &lt;meta charset="UTF-8"&gt; <br>
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; <br>
+        &lt;title&gt;Mi Primer Documento HTML&lt;/title&gt; <br>
+    &lt;/head&gt; <br>
+    &lt;body&gt; <br>
+        &lt;h1&gt;Hola mundo&lt;/h1&gt; <br>
+        &lt;p&gt;Este es mi primer documento HTML.&lt;/p&gt; <br>
+    &lt;/body&gt;<br>
+    &lt;/html&gt;
+</code>
+       </div>
+    </pre>
+    <p>Una vez que hayas creado la estructura básica del documento, puedes pasar al siguiente desafío.</p>
+    <a href="INDEX.html"><img class="btn1 start-button" src="flecha.png"></a>
+    <a href="Desafio 2.html"><img class="btn2 start-button" src="flecha2.png"></a>
+</div>
+       
+
+       
+    </main>
+    <footer>
+        © 2024 Aventuras HTML: El Aprendiz de Desarrollador Web
+    </footer>
+
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

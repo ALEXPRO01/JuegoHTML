@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío 5: Formularios</title>
+    <style>
+           *{
+            margin: 0;
+            padding: 0;
+        }
+          body{
+            height: 100%;
+            position: relative;
+            background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(fondopro.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        header {
+            color: aqua;  
+        }
+        footer {
+            color: aqua;
+            margin-top: 2%;
+            text-align: center;
+        }        
+        .logo{
+            width: 150px;
+            border-radius: 10px;
+          
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 20px;
+            padding-left: 5%;
+            padding-right: 5%;
+            font-weight: bold;
+        }
+        main {
+            flex-grow: 1;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: aqua;
+            margin-right: 35%;
+            font-size: 250%;
+        }
+        h2 {
+            color: white;
+        }
+        h2:hover{
+          color: aqua;
+        }
+        h3{
+            color: white;
+        }
+        h3:hover{
+          color: aqua;
+        }
+        p {
+            line-height: 1.6;
+            color: white;
+        }
+        form {
+            background-color: transparent;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: inset 0 0 10px aqua, 0 0 10px aqua;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: white;
+            background-color: transparent;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea,
+        select {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid white;
+            border-radius: 5px;
+            background-color: transparent;
+            color: white;
+        }
+        button {
+            background-color: white;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: aqua;
+        }
+       
+        .btn1{
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            margin-left: 7%;
+            background-color: white;
+            border-radius: 50px;
+        }
+        .btn2{
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            margin-left: 70%;
+            background-color: white;
+            border-radius: 50px;
+        }
+    
+        .start-button:hover {
+            background-color: aqua;
+        }
+        .card-container{
+            max-width: 800px;
+            padding: 2%;
+            border: 2px solid #fafafa10;
+            margin: 0 auto;
+            border-radius: 1rem;
+            -webkit-backdrop-filter: blur(1.4rem);
+            backdrop-filter: blur(1.4rem);
+            box-shadow: inset 0 0 10px aqua, inset 0 0 20px aqua, 0 0 10px aqua, 0 0 30px aqua;
+            margin-top: 2%;
+        }
+        p:hover{
+        color: aqua;
+        }
+        ul li{
+            color: white;
+            margin-left: 2%;
+        }
+        ul li:hover{
+          color: aqua;
+        }
+        input{
+            background-color: transparent;
+        }
+        textarea{
+            background-color: transparent;
+        }
+       option{
+        color: black;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <nav><a href="INDEX.html"><img class="logo" src="log.png" alt=""></a> 
+            <h1>Bienvenido al Desafío 5</h1>
+        </nav>
+    </header>
+    <div class="card-container">
+        <main>
+            <h2>Formularios</h2>
+            <p>En este desafío, aprenderás a crear formularios HTML y a utilizar diferentes tipos de entradas para capturar información del usuario. <strong>Ejemplo:</strong></p><br>
+            <form>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Ingresa tu nombre">
+    
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico">
+    
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Escribe tu mensaje aquí"></textarea>
+    
+                <label for="category">Categoría:</label>
+                <select id="category" name="category">
+                    <option value="consulta">Consulta</option>
+                    <option value="sugerencia">Sugerencia</option>
+                    <option value="otro">Otro</option>
+                </select>
+    
+                <button type="submit">Enviar</button>
+            </form><br>
+            <h2>Elementos Básicos del Formulario</h2><br>
+      <p>Para crear un formulario, utilizamos la etiqueta <code>&lt;form&gt;</code>. Dentro de esta etiqueta, incluimos varios elementos de formulario como <code>&lt;input&gt;</code>, <code>&lt;label&gt;</code>, <code>&lt;textarea&gt;</code>, y <code>&lt;button&gt;</code>.</p>
+      <br>
+      <h3>Ejercicio Práctico:</h3><br>
+      <p>Ahora es tu turno. Crea un formulario con los siguientes campos:</p>
+      <ul>
+        <li>Nombre (tipo texto)</li>
+        <li>Email (tipo email)</li>
+        <li>Contraseña (tipo password)</li>
+        <li>Género (radio buttons)</li>
+        <li>Intereses (checkboxes)</li>
+        <li>País (dropdown)</li>
+        <li>Mensaje (textarea)</li>
+        <li>Botón de envío</li>
+      </ul><br>
+      <h3>Instrucciones:</h3><br>
+      <p>1. Crea una estructura básica de HTML</p>
+      <p>2. Dentro del <code>&lt;body&gt;</code>, añade la etiqueta <code>&lt;form&gt;</code>.</p>
+      <p>3. Añade etiquetas <code>&lt;label&gt;</code> para cada campo del formulario, describiendo el propósito del campo.</p>
+      <p>4. Añade los campos de entrada (<code>&lt;input&gt;</code>) para Nombre, Email y Contraseña, usando los tipos de entrada apropiados.</p>
+      <p>5. Añade opciones de género usando botones de radio (<code>&lt;input type="radio"&gt;</code>).</p>
+      <p>6. Añade opciones de intereses usando checkboxes (<code>&lt;input type="checkbox"&gt;</code>).</p>
+      <p>7. Añade un menú desplegable (<code>&lt;select&gt;</code>) para la selección de país.</p>
+      <p>8. Añade un área de texto (<code>&lt;textarea&gt;</code>) para mensajes adicionales.</p>
+      <p>9. Añade un botón de envío (<code>&lt;button type="submit"&gt;</code>).</p>
+      
+         <br>
+            <div>
+              <a href="Desafio 4.html"><img class="btn1 start-button" src="flecha.png"></a>
+              <a href="Desafio 6.html"><img class="btn2 start-button" src="flecha2.png"></a>
+            </div>
+        </main>
+    </div>
+    <footer>
+       © 2024 Aventuras HTML: El Aprendiz de Desarrollador Web
+    </footer><br>
+</body>
+</html>

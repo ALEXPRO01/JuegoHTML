@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío 6: Listas</title>
+    <style>
+            *{
+            margin: 0;
+            padding: 0;
+        }
+          body{
+            height: 100%;
+            position: relative;
+            background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(fondopro.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        header {
+            color: aqua;  
+        }
+        footer {
+            color: aqua;
+            margin-top: 2%;
+            text-align: center;
+        }        
+        .logo{
+            width: 150px;
+            border-radius: 10px;
+          
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 20px;
+            padding-left: 5%;
+            padding-right: 5%;
+            font-weight: bold;
+        }
+        main {
+            flex-grow: 1;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: aqua;
+            margin-right: 35%;
+            font-size: 250%;
+        }
+        h2 {
+            color: white;
+        }
+        h2:hover{
+          color: aqua;
+        }
+          
+        h3{
+            color: white;
+        }
+        h3:hover{
+          color: aqua;
+        }
+          
+        h4{
+            color: white;
+        }
+        h4:hover{
+          color: aqua;
+        }
+
+        p {
+            line-height: 1.6;
+            color: white;
+        }
+        p:hover{
+          color: aqua;
+        }
+         
+          
+        ul, ol {
+            background-color: transparent;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: inset 0 0 10px aqua, 0 0 10px aqua;
+            margin-bottom: 20px;
+            border: 2px solid white;
+        }
+        li {
+            color: white;
+            margin-bottom: 10px;
+        }
+        li:hover{
+          color: aqua;
+        }
+        .btn1{
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            margin-left: 7%;
+            background-color: white;
+            border-radius: 50px;
+        }
+        .btn2{
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            margin-left: 70%;
+            background-color: white;
+            border-radius: 50px;
+        }
+    
+        .start-button:hover {
+            background-color: aqua;
+        }
+        .card-container{
+            max-width: 800px;
+            padding: 2%;
+            border: 2px solid #fafafa10;
+            margin: 0 auto;
+            border-radius: 1rem;
+            -webkit-backdrop-filter: blur(1.4rem);
+            backdrop-filter: blur(1.4rem);
+            box-shadow: inset 0 0 10px aqua, inset 0 0 20px aqua, 0 0 10px aqua, 0 0 30px aqua;
+            margin-top: 2%;
+        }
+        code{
+            color: white;
+        }
+        code:hover{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav> 
+            <a href="INDEX.html"><img class="logo" src="log.png" alt=""></a> 
+            <h1>Bienvenido al Desafío 6</h1>
+        </nav>
+    </header>
+    <div class="card-container">
+        <main>
+            <h2>Listas</h2><br>
+            <p>En este desafío, aprenderás a crear listas en HTML. Las listas son útiles para organizar información en un formato estructurado y fácil de leer.</p><br>
+            <h3>Instrucciones:</h3><br>
+            <ol>
+                <li>Crea una lista ordenada (numerada) utilizando la etiqueta <code>&lt;ol&gt;</code>.</li>
+                <li>Añade elementos a la lista ordenada utilizando la etiqueta <code>&lt;li&gt;</code> para cada elemento.</li>
+                <li>Crea una lista desordenada (con viñetas) utilizando la etiqueta <code>&lt;ul&gt;</code>.</li>
+                <li>Añade elementos a la lista desordenada utilizando la etiqueta <code>&lt;li&gt;</code> para cada elemento.</li>
+                <li>Aplica estilos CSS para mejorar la apariencia de las listas, utilizando propiedades como <code>margin</code>, <code>padding</code> y <code>background-color</code>.</li>
+            </ol><br>
+            <h3>Ejemplo:</h3><br>
+            <p>Sigue este ejemplo para crear tus propias listas:</p><br>
+            <h4>Lista Ordenada</h4>
+            <pre>
+                <code>
+                    &lt;ol&gt;
+                        &lt;li&gt;Primer elemento&lt;/li&gt;
+                        &lt;li&gt;Segundo elemento&lt;/li&gt;
+                        &lt;li&gt;Tercer elemento&lt;/li&gt;
+                    &lt;/ol&gt;
+                </code>
+            </pre>
+            <h4>Lista Desordenada</h4>
+            <pre>
+                <code>
+                    &lt;ul&gt;
+                        &lt;li&gt;Primer elemento&lt;/li&gt;
+                        &lt;li&gt;Segundo elemento&lt;/li&gt;
+                        &lt;li&gt;Tercer elemento&lt;/li&gt;
+                    &lt;/ul&gt;
+                </code>
+            </pre>
+            <p>Intenta crear tus propias listas siguiendo los pasos anteriores y utilizando el ejemplo como guía. Buena suerte.</p>
+        </main>
+        <div>
+            <a href="Desafio 5.html"><img class="btn1 start-button" src="flecha.png"></a>
+            <a href="Desafio 7.html"><img class="btn2 start-button" src="flecha2.png"></a>
+        </div>
+    </div>
+
+    
+
+    <footer>
+      &copy; 2024 Aventuras HTML: El Aprendiz de Desarrollador Web
+    </footer><br>
+</body>
+</html>
